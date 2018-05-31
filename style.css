@@ -1,0 +1,710 @@
+/*
+ Theme Name:   Travel In Her Shoes
+ Description:  Custom child theme for Aggie Lal at Travel In Her Shoes. Requires Twenty Seventeen.
+ Author:       Dan Hauk
+ Author URI:   https://danhauk.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  travelinhershoes
+*/
+
+body {
+	color: #333;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #222;
+  font-family: Oswald, sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+  color: #999;
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+a:hover {
+	box-shadow: none;
+	color: #000;
+}
+
+.wrap {
+	max-width: 1080px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.site-content {
+	padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.hentry {
+	margin-bottom: 50px;
+}
+
+.blog .site-main > article,
+.archive .site-main > article,
+.search .site-main > article {
+	padding-bottom: 0;
+}
+
+/* Header */
+.site-header {
+	background: transparent;
+	text-align: center;
+}
+
+.site-branding {
+	padding-top: 90px;
+  padding-bottom: 30px;
+	margin: 0 !important;
+}
+
+.site-title {
+	margin: 0 auto 20px;
+	font-size: 68px;
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	line-height: 1;
+	color: #000;
+}
+
+.site-description {
+	color: #666;
+	font-family: Oswald, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+	.site-title {
+    font-size: 40px;
+    font-size: 9vw;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+	}
+
+	.site-description {
+    font-size: 13px;
+	}
+}
+
+/* Navigation */
+.navigation-top {
+	background: #fff;
+  border-bottom: 1px dotted #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: .92;
+  z-index: 500;
+  transition: all 300ms ease;
+	height: 40px;
+}
+
+.admin-bar .navigation-top {
+	top: 32px;
+}
+
+.navigation-top .wrap {
+	max-width: 1080px;
+	padding: 0 15px;
+}
+
+.main-navigation a {
+	display: block;
+  text-decoration: none;
+  line-height: 38px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 15px;
+  color: #000;
+  -moz-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.main-navigation a:hover,
+.main-navigation li li:hover,
+.main-navigation li li.focus {
+	background: none !important;
+	color: #767676 !important;
+}
+
+.main-navigation ul li::before,
+.main-navigation ul li::after {
+	display: none !important;
+}
+
+.main-navigation ul ul {
+	border: 0;
+}
+
+.main-navigation ul ul li a {
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.site-header .navigation-top .menu-scroll-down {
+	display: none;
+}
+
+.menu-nancy-nav-menu-container {
+	float: left;
+}
+
+.menu-toggle {
+	float: right;
+}
+
+.top-social-menu {
+	float: right;
+}
+
+.top-social-menu a {
+	display: inline-block !important;
+  font-size: 17px !important;
+  margin: 0 7px;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 769px) {
+	.admin-bar .navigation-top {
+		top: 46px;
+	}
+	.navigation-top {
+		position: fixed;
+	}
+	.menu-nancy-nav-menu-container {
+		float: none;
+		clear: both;
+	}
+	.top-social-menu {
+		float: left;
+	}
+}
+
+/* Primary */
+#primary {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media screen and (min-width: 48em) {
+	#primary {
+		float: left !important;
+		width: 68% !important;
+	}
+
+	#primary.full-width-content {
+		float: none !important;
+		width: 100% !important;
+	}
+}
+
+.page-title {
+	margin: 0;
+  padding: 0 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.entry-header {
+	margin: 0 0 15px;
+	padding: 0 !important;
+}
+
+.entry-meta {
+	color: #222;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+.entry-header .entry-meta {
+	border-top: 1px dotted #ccc;
+}
+
+.entry-meta a {
+	color: #222;
+}
+
+.date-bar-white-bg {
+	background: #fff;
+	padding: 0 10px;
+	position: relative;
+	top: -7px;
+}
+
+.home.blog .entry-title,
+.entry-title {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.entry-content {
+	float: none !important;
+	width: 100% !important;
+}
+
+.entry-content .more-link,
+.entry-summary .more-link {
+  color: #000;
+  background: #fff;
+	box-shadow: none;
+  border: 1px dotted #ccc;
+  display: block;
+  font: 13px Oswald, sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  -moz-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.entry-content .more-link:hover,
+.entry-summary .more-link:hover {
+	border-color: #666;
+	box-shadow: none;
+}
+
+.entry-content .more-link::before,
+.entry-summary .more-link::before {
+	display: none;
+}
+
+.entry-footer {
+	border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.share-toolbox {
+  margin-bottom: 15px;
+}
+
+h6.share-title {
+	display: inline;
+	font-size: 11px;
+}
+
+.share-toolbox a {
+	color: #222;
+}
+
+.share-toolbox a:hover {
+	box-shadow: none;
+	color: #999;
+}
+
+.share-toolbox .fa {
+	font-size: 15px;
+  margin: 0 5px;
+  -moz-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+/* Grid posts */
+.travelinhershoes-grid-post {
+	list-style: none;
+	width: 48%;
+	float: left;
+}
+
+.travelinhershoes-grid-post:nth-child(even) {
+    margin: 0 2% 0 0;
+}
+
+.travelinhershoes-grid-post:nth-child(odd) {
+    margin: 0 0 0 2%;
+}
+
+.home.blog .travelinhershoes-grid-post .entry-title {
+	font-size: 15px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 0 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.entry-footer .share-toolbox {
+	float: left;
+}
+
+.entry-footer .comments {
+	float: right;
+}
+
+.entry-summary {
+	margin-bottom: 15px;
+}
+
+a.grid-cover-img {
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	box-shadow: none;
+  display: block;
+  position: relative;
+}
+
+a.grid-cover-img:hover {
+	box-shadow: none;
+}
+
+a.grid-cover-img img {
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+}
+
+/* Pagination */
+.pagination {
+	padding: 10px 0;
+  margin: 0;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+
+.pagination a,
+.pagination a:hover {
+	box-shadow: none !important;
+}
+
+.page-numbers {
+	line-height: 1.6em;
+  display: inline-block;
+  padding: 0 8px;
+  height: 18px;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  color: #000;
+}
+
+.page-numbers.current {
+	color: #999;
+}
+
+.prev.page-numbers, .next.page-numbers {
+	background: none;
+  display: inline-block;
+  font-size: 24px;
+  font-size: 1.5rem;
+	line-height: 18px;
+	padding: 0 8px;
+}
+
+.prev.page-numbers:hover,
+.next.page-numbers:hover {
+	background: none;
+	color: #999;
+}
+
+/* Sidebar */
+#secondary {
+	text-align: center;
+  padding: 0 6px 0 26px;
+}
+
+.widget {
+	margin-bottom: 3px;
+	padding: 10px 15px;
+}
+
+h2.widget-title {
+	color: #000;
+  border-top: 1px dotted #ccc;
+  font: 12px Oswald, arial, sans-serif;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.textwidget {
+	margin-bottom: 1em;
+}
+
+.socialz a {
+	box-shadow: none;
+	color: #111111;
+  font-size: 25px;
+  margin: 0 12px;
+	text-decoration: none;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.socialz a:hover {
+	box-shadow: none;
+	color: #999;
+}
+
+@media screen and (min-width: 48em) {
+	#secondary {
+		float: left;
+		width: 32% !important;
+	}
+}
+
+/* Single post */
+.post-navigation {
+	font-weight: 400;
+	margin: 0 0 10px;
+}
+
+.post-navigation a {
+	box-shadow: none;
+	padding: 15px 0;
+  display: inline-block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background: transparent;
+}
+
+.post-navigation a:hover {
+	box-shadow: none;
+}
+
+.post-navigation .nav-links {
+	padding: 0;
+}
+
+.nav-subtitle {
+	display: block;
+	margin-bottom: 5px;
+	color: #222;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 1.2;
+}
+
+a .nav-title {
+	box-shadow: none;
+	color: #999;
+}
+
+a:hover .nav-title {
+	box-shadow: none;
+}
+
+.nav-links .nav-previous .nav-title .nav-title-icon-wrapper {
+	left: 0;
+	position: relative;
+}
+
+/* Comments */
+#comments {
+	padding: 0 !important;
+}
+
+.comments-title {
+	margin: 0 0 30px;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-top: 10px !important;
+}
+
+.comment-list {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+.comment, .pingback {
+    padding: 20px 0;
+    border-top: 1px dotted #ccc;
+}
+
+.comment:first-child, .pingback:first-child {
+    border: 0;
+}
+
+.comment-body {
+	margin: 0;
+}
+
+.comment-meta {
+	overflow: hidden;
+  color: #444;
+  font-size: 13px;
+  font-family: Oswald, sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comment-author .avatar {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 0 15px 0 0;
+	display: block;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	position: static;
+}
+
+.comment-author::after {
+	clear: none;
+}
+
+.comment-author .fn {
+	display: block;
+  color: #222;
+	font-size: 13px;
+	font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.comment-content {
+	margin: 20px 0 0;
+}
+
+.comment-reply-link {
+	font: 13px Oswald, sans-serif;
+	text-transform: uppercase;
+}
+
+.comment-reply-link .icon {
+	color: #c5c5c5;
+	margin-right: 5px;
+	position: static;
+}
+
+/* Site Footer */
+.site-footer {
+	color: #fff;
+  font: 10px arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background: #111;
+  width: 100%;
+}
+
+.site-footer .wrap {
+	background: #111;
+	padding: 15px;
+}
+
+.site-footer .site-info {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+}
+
+/* WooCommerce */
+.onsale {
+	border-radius: 0;
+  left: -10px;
+  top: 0;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font: 14px Oswald, sans-serif;
+  letter-spacing: 3px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.84);
+  line-height: 1;
+  padding: 7px 26px;
+  min-height: inherit;
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+	z-index: 9;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price {
+	color: #000;
+	font-size: 14px;
+}
+
+.amount {
+    font-family: Oswald, sans-serif;
+}
+
+.woocommerce-result-count,
+.product_meta {
+	display: none;
+}
+
+.woocommerce div.product .product_title {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.woocommerce div.product .amount {
+	font-size: 24px;
+}
